@@ -2,4 +2,4 @@
 
 Deployed website: `https://hwayounj.github.io/pui-hw-HaileyJeong/`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/hwayounj/pui-hw-HaileyJeong`
