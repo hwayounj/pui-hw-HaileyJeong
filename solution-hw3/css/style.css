@@ -178,11 +178,18 @@ hr{
     margin-bottom: 80px;
 }
 .add-to-cart{
+    width: 300px;
     border:4px solid black;
     background-color: yellow;
     padding:5px;
     margin-left:80px;
     font-weight: 500;
+    display:inline;
+
+}
+
+.price-detail{
+    display:inline;
 }
 
 

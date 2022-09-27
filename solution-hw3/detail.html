@@ -47,11 +47,8 @@
       </div>
                   
       <div class="selector1">
-        <select name="glaizing-options" id="glazing">
-          <option value ="original">Keep original</option>
-          <option value="sugar-milk">Sugar milk</option>
-          <option value="vanila-milk">Vanila milk</option>
-          <option value="double-chocolate">Double chocolate</option>
+        <select name="glaizing-options" id="glazing" onchange = "glazingChange(this)">
+          <!-- will be added by javacript -->
         </select>  
       </div>
                 
@@ -60,17 +57,16 @@
       </div>
           
       <div class="selector2">
-      <select name="pack" id="pack-size">
-      <option value ="1">1</option>
-      <option value="3">3</option>
-      <option value="6">6</option>
-      <option value="12">12</option>
+      <select name="pack" id="pack-size" onchange = "packSizeChange(this)">
+      <!-- will be added by javascript -->
       </select>
       </div>
           
       <div class="price-info">
-      <p>$ 2.49 <span class="add-to-cart">Add to cart</span></p>
+      <div class="price-detail">$ 2.49 </div>
+      <div class="add-to-cart">Add to cart</div>
       </div>
+      
     </div>
   </div>
 

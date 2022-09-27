@@ -183,8 +183,12 @@ hr{
     padding:5px;
     margin-left:80px;
     font-weight: 500;
+    display:inline;
 }
 
+.price-detail{
+    display:inline;
+}
 
 /* cart */
 
