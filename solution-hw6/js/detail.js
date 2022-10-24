@@ -46,7 +46,7 @@ let totalPrice = 0;
 
 /* ------------------------------------------------------------------------- */
 
-let cartSet;
+let cartSet = new Set();
 
 //retrieve from local storage
 if (localStorage.getItem('storedItems') != null) {
