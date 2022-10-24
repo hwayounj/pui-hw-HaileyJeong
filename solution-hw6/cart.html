@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel = "stylesheet" href="css/style.css">
+  <script defer src="js/detail.js"></script>
+
+
+
+
+</head>
+
+<body>
+  <!-- navigation & logo -->
+  <div class = "navigation">
+    <div class = "logo"> 
+      <a href=index.html>
+        <img class="logo-image" src="assets/logo-01.svg" alt="logo of cake shop"/>
+      </a>
+    </div>
+    <div class = "menu">
+      <div class = "options">
+        <div>
+          <a href = index.html>PRODUCTS</a>
+        </div>
+        <div>
+          <a class="nav-highlighted" href = cart.html>CART</a>
+        </div>
+      </div>
+      <hr>
+      <div class = "title">Shopping cart</div>
+    </div>
+  </div>
+  
+  <!-- main content -->
+
+  <!-- title -->
+  <div class = "cart-content">
+    <div class ="empty">
+        <!-- placeholder -->
+    </div>
+    <div class = "cart-holders">
+      <!-- template -->
+      <template id="cart-item-template">
+      <div class = "cart-item">
+          <div class = "cart-image-container">
+          <img class="cart-image" src="assets/original-cinnamon-roll.jpg" alt="picture of original cinnamon roll"/>
+          <button class ="remove-text">Remove</button>
+          <!-- <div class="remove-text">Remove</div> -->
+          </div>
+          
+          <div class="cart-options">
+          <div class="product-name">Original Cinnamon Roll</div>
+          <div class="product-glazing">Glazing: Keep original</div>
+          <div class="product-packsize">Pack Size: 1</div>
+          </div>
+
+          <div class="price">$2.49</div>
+      </div>
+      </template>
+
+      <!-- <div class = "cart-item">
+
+          <div class = "cart-image-container">
+              <img class="cart-image" src="assets/double-chocolate-cinnamon-roll.jpg" alt="picture of double chocolate cinnamon roll"/>
+              <div class="remove-text">Remove</div>
+          </div>
+          
+          <div class="cart-options">
+              <div class="product-info">Double Chocolate Cinnamon Roll<br>Glazing: Sugar milk<br>Pack Size: 6</div>
+          </div>
+
+          <div class="price">$27.45</div>
+      </div> -->
+      
+      <hr class="bottom-hr">
+
+      <div class = "cart-item">
+          <div class = "cart-empty-container">
+          </div>
+          <div class="cart-options">
+              <div class="product-info">Total</div>
+          </div>
+          <div class="price" id="total-price"></div>
+      </div>
+      <div class="checktout">Checkout</div>
+    </div>
+
+  </div>
+    
+</body>
+</html>

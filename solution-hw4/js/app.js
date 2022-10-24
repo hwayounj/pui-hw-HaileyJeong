@@ -60,7 +60,7 @@ const params = new URLSearchParams(queryString);
 
 //access the parameter we want using the get method
 const rollType = params.get('rolls');
-// console.log(rollType)
+console.log(rollType)
 
 
 //search through the dictionary to find the rolltype value that matches the parameter and update our page accordingly

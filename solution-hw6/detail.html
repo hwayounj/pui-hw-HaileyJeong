@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel = "stylesheet" href="css/style.css">
+    <script defer src="js/detail.js"></script>
+    <!-- <script defer src="js/rollsData.js"></script> -->
+
+</head>
+
+<body>
+  <!-- top section that contains navigation and logo -->
+  <div class = "navigation">
+    <div class = "logo"> 
+      <a href=index.html>
+          <img class="logo-image" src="assets/logo-01.svg" alt="logo of cake shop"/>
+        </a>      
+      </div>
+      <div class = "menu">
+        <div class = "options">
+            <div >
+              <a class="nav-highlighted" href = index.html>PRODUCTS</a>
+            </div>
+            <div>
+              <a href = cart.html>CART</a>
+            </div>
+        </div>
+        <hr>
+        <div class = "title">Our hand-made cinnamon rolls</div>
+    </div>
+  </div>
+
+  <!-- main content of detail page -->
+  <div class = "detail-content">
+    <div class = "detail-image">
+        <img class="detail-image-cinnamon" src="assets/original-cinnamon-roll.jpg" alt="picture of original cinnamon roll"/>
+    </div>
+    <div class = "detail-menu">
+      <div class="explanation">
+        Customize our delicious, hand-made cinnamon roll to your liking!
+      </div>
+                
+      <div class="label1">
+        <label for="glazing">Glazing:</label>
+      </div>
+                  
+      <div class="selector1">
+        <select name="glaizing-options" id="glazing" onchange = "glazingChange(this)">
+          <!-- will be added by javacript -->
+        </select>  
+      </div>
+                
+      <div class="label2">
+      <label for="pack-size">Pack size:</label>
+      </div>
+          
+      <div class="selector2">
+      <select name="pack" id="pack-size" onchange = "packSizeChange(this)">
+      <!-- will be added by javascript -->
+      </select>
+      </div>
+          
+      <div class="price-info">
+      <div class="price-detail"></div>
+      <button class="button-addcart"  onclick="saveInfo()">Add to cart</button>
+
+      <!-- ="add-to-cart"> -->
+
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
