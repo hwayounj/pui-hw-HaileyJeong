@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+*{
+    text-decoration: none;
+    /* color:white; */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+/* navigation */
+.container{
+    width:100%;
+    min-height:100vh;
+    background: #0d0d0d;
+}
+
+nav{
+    text-decoration: none;
+
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    height:80px;
+    line-height: 80px;
+
+
+}
+
+
+
+.logo{
+    text-decoration: none;
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color:white;
+    letter-spacing: 3px;
+    cursor:pointer;
+    text-transform: uppercase;
+    
+
+    
+
+}
+.logo a{
+    color:white;
+}
+
+.logo a:hover{
+    animation: blink 2s linear infinite;
+    color:#FF0075;
+    
+
+
+}
+
+/* logo animation */
+@keyframes blink{
+    0%{opacity:0;}
+    50%{opacity:0.5;}
+    100%{opacity:1;}
+}
+
+
+
+b{
+    font-size:70px;
+    color:#FF0075;
+}
+
+.navItems{
+    display:flex;
+
+
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+
+.navItems li a{
+    font-size: 25px;
+    color: #FFD5E8;
+    letter-spacing: 3px;
+    text-decoration:none;
+    text-transform: capitalize;
+
+
+}
+
+.navItems li:hover a{
+    color: #FF0075;
+}
+
+
+.links{
+    font-size: 30px;
+    color:white;
+
+}
+.links a{
+    cursor: pointer;
+    font-size: 30px;
+    color:white;
+    margin:25px 10px;
+}
+
+.links a:hover{
+    cursor: pointer;
+    font-size: 30px;
+    color:#FF0075;
+    margin:25px 10px;
+}
+
+
+.wrapper{
+    display:flex;
+    width : 100%;
+    height:100vh;
+    /* justify-content: center; */
+    align-items: center;
+    padding:0 10%;
+    overflow:hidden;
+
+}
+
+.main{
+    width: 50%;
+}
+
+.text{
+    width:60%;
+}
+
+
+.topline{
+    color:white;
+
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.topline::after{
+    position:absolute;
+    content: '';
+    height:4px;
+    width:45px;
+    bottom:10px;
+    background-color:#FF0075;
+}
+
+
+h1{
+    display:block;
+    font-size: 4em;
+    font-weight:900;
+    color:white;
+}
+
+.typing{
+    color:#FF0075;
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width:90%;
+    font-size: 1.2em;
+    color: white;
+
+}
+
+.btns{
+    width: 100%;
+    position:relative;
+    left:150px;
+
+}
+
+button{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-weight: 225px;
+    font-weight: 400;
+    color:black;
+    background-color: #FFD5E8;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    /* box-shadow: 0 15px 10px rgba(0,0,0,0.1); */
+}
+
+
+button:hover{
+    background-color: #FF0075;
+}
+
+.imgbox{
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+.imgbox img{
+    position:relative;
+    height:100%;
+    width: 480px;
+    top: 60px;
+    right: -60px;
+    /* transform:rotateY(180deg); */
+
+}
+
+
+/* robot move */
+
+.imgbox img:hover{
+    animation: animateRobot 4s linear infinite;
+}
+
+
+@keyframes animateRobot{
+    50%{
+        right: 30px;
+        top: 90px;
+    }
+}
+
+/* moving blob */
+
+.animated-circle{
+    /* transform: scale(2.8); */
+    position:absolute;
+    top:50%;
+    left:75%;
+    height:40vw;
+    width:40vw;
+    opacity: 0.8;
+    transform: translate(0,30%) scale(2.8);
+    background:#ffe6f1;
+    animation: animated-circle 8s linear infinite;
+
+}
+
+
+@keyframes animated-circle{
+    0%,100%{
+        border-radius: 45% 55% 70% 35%/70% 30% 90% 40%;
+    }
+    25%{
+        border-radius: 55% 45% 30% 35%/50% 30% 60% 10%;
+    }
+    50%{
+        border-radius: 65% 35% 35% 65%/40% 60% 30% 70%;
+    }
+    250%{
+        border-radius: 35% 65% 60% 40%/70% 30% 40% 60%;
+    }
+}
+
+/* responsive design */
+
+@media(max-width: 768px){
+
+    .container{
+        min-height:300vh;
+    }
+    .imgbox img{
+        display:none;
+        }
+
+    span.animated-circle{
+        transform:translate(-200%,90%);
+        opacity: 0.8;
+        transform: scale(2);
+        /* z-index: -10; */
+    }
+
+
+    .text {
+        width: 800px;
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    p {
+        width: 500px;
+    }
+    
+
+}
